@@ -1,0 +1,219 @@
+@import "_common-style";
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.wrapper {}
+
+.header {
+
+    &__body {}
+
+    &__first-wrapp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 18px 0;
+    }
+
+    &__menu-wrapp {}
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        width: 67px;
+        height: 62px;
+        margin-right: 10px;
+    }
+
+    &__text-wrapp {}
+
+    &__tittle {
+        font-family: 'Proxima Nova';
+        font-size: 48px;
+        text-transform: uppercase;
+        line-height: 41px;
+        color: $primary-color;
+    }
+
+    &__subtittle {
+        font-family: 'Proxima Nova';
+        font-size: 15px;
+        color: $text-color;
+    }
+}
+
+.work {
+    width: 375px;
+    text-align: center;
+
+    &__about {
+        margin-bottom: 11px;
+    }
+
+    &__day {
+        font-weight: bold;
+    }
+}
+
+
+.contacts-wrapp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    &__row-one {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__mail {
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: $text-color;
+    }
+
+    &__row-two {
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+    }
+}
+
+.personal-area {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    &__img {
+        width: 12px;
+        height: 13px;
+        margin-right: 8px;
+        stroke: $primary-color;
+    }
+
+    &__text {
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: $text-color;
+    }
+}
+
+
+.contact {
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        stroke: $text-color;
+        stroke-width: 2;
+    }
+
+    &__icon:hover {
+
+        stroke: $primary-color;
+
+    }
+
+    &__number {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 6px;
+    }
+
+    &__arrow-wrapp {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: #EDEDED;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__arrow {
+        stroke: $text-color;
+        stroke-width: 3;
+        width: 4px;
+        height: 8px;
+        position: absolute;
+        z-index: 19;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        // transform: ;
+    }
+}
+
+.number-list {
+
+    &__item {}
+
+    &__img {}
+
+    &__number {}
+}
+
+
+
+.basket {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin-left: 20px;
+
+
+    &__svg {
+        width: 100%;
+        height: 100%;
+        stroke: $primary-color;
+
+    }
+
+    &__number-wrapp {
+        position: absolute;
+        top: -20%;
+        right: -40%;
+        display: flex;
+        justify-content: center;
+        line-height: 0;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: $primary-color;
+        border-radius: 50%;
+    }
+
+    &__number-goods {
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    }
+}

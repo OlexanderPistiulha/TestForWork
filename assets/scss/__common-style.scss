@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/ProximaNova/ProximaNovaCond-Black.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/ClearSans/ClearSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/ClearSans/ClearSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/ClearSans/ClearSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/ClearSans/ClearSans-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/ClearSans/ClearSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+$primary-color: #1AB0CE;
+//$tittle-color: rgb(9, 30, 64);
+$text-color: #3A4047;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Clear Sans';
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+// h2 {
+//     font-family: NunitoSans;
+//     font-size: 50px;
+//     font-weight: 600;
+//     letter-spacing: 0.02em;
+//     color: $tittle-color;
+// }
