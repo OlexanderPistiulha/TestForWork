@@ -2,11 +2,16 @@ window.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
 
-    let numberArrow = document.querySelector('.contact__arrow-wrapp');
+    let numberArrow = document.querySelectorAll('.contact__arrow-wrapp');
 
-    numberArrow.addEventListener('click', function () {
-        document.querySelector(".number-list").classList.toggle("number-list__active");
-        document.querySelector(".contact__arrow").classList.toggle("contact__arrow-active");
+    numberArrow[0].addEventListener('click', function () {
+        document.querySelectorAll(".number-list")[0].classList.toggle("number-list__active");
+        document.querySelectorAll(".contact__arrow")[0].classList.toggle("contact__arrow-active");
+    });
+
+    numberArrow[1].addEventListener('click', function () {
+        document.querySelectorAll(".number-list")[1].classList.toggle("number-list__active");
+        document.querySelectorAll(".contact__arrow")[1].classList.toggle("contact__arrow-active");
     });
 
     let menuList = document.querySelector('.menu-mobile__menu');
