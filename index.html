@@ -13,7 +13,16 @@
 <body>
 
     <div class="wrapper">
-        <!-- <header class="header">
+
+        <div class="callback-wrapp">
+            <div class="conteiner">
+                <div class="callback">
+                    
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
             <div class="conteiner">
                 <div class="header__body">
                     <div class="header__first-wrapp">
@@ -74,9 +83,21 @@
                                         </svg>
                                     </div>
                                     <ul class="number-list">
+                                        <div class="number-list__rhomb"></div>
                                         <li class="number-list__item">
-                                            <img src="" alt="" class="number-list__img">
-                                            <p class="number-list__number"></p>
+                                            <img src="assets/img/vodafone.png" alt="" class="number-list__img">
+                                            <a href="tel:(099) 445-54-18" class="number-list__number">(099)
+                                                445-54-18</a>
+                                        </li>
+                                        <li class="number-list__item">
+                                            <img src="assets/img/kievstar.png" alt="" class="number-list__img">
+                                            <a href="tel:(096) 497-78-03" class="number-list__number">(096)
+                                                497-78-03</a>
+                                        </li>
+                                        <li class="number-list__item">
+                                            <img src="assets/img/lifecell.png" alt="" class="number-list__img">
+                                            <a href="tel:(063) 435-16-81" class="number-list__number">(063)
+                                                435-16-81</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -100,10 +121,85 @@
                         </div>
 
                     </div>
-                    <nav class="header__menu-wrapp"></nav>
+
+                </div>
+        </header>
+
+        <nav class="menu">
+            <div class="conteiner">
+                <div class="menu-desktop">
+                    <ul class="menu-desktop__list">
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">Главная</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">Продукция</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">Доставка и оплата</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">Новости</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">База знаний</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">О нас</a>
+                        </li>
+                        <li class="menu-desktop__item">
+                            <a href="#" class="menu-desktop__link">Контакты</a>
+                        </li>
+                        <li class="menu-desktop__item menu-desktop__search ">
+                            <svg class="menu-desktop__search-svg" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M8.5 16C12.6421 16 16 12.6421 16 8.5C16 4.35786 12.6421 1 8.5 1C4.35786 1 1 4.35786 1 8.5C1 12.6421 4.35786 16 8.5 16Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19 19L13.8 13.8" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-mobile">
+                    <div class="menu-mobile__menu">Меню</div>
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">Главная</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">Продукция</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">Доставка и оплата</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">Новости</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">База знаний</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">О нас</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="#" class="menu-mobile__link">Контакты</a>
+                        </li>
+                        <li class="menu-mobile__item menu-desktop__search ">
+                            <svg class="menu-desktop__search-svg" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M8.5 16C12.6421 16 16 12.6421 16 8.5C16 4.35786 12.6421 1 8.5 1C4.35786 1 1 4.35786 1 8.5C1 12.6421 4.35786 16 8.5 16Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19 19L13.8 13.8" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header> -->
+        </nav>
+
 
         <section class="first-screen">
             <div class="conteiner">
@@ -176,7 +272,7 @@
                     <h1 class="tittle">О нас</h1>
                     <p class="subtittle">Оперативная печать полиграфии от 1 дня!</p>
                     <p class="about__content">Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от
-                        вредного излучения, оно проникает и на глубину 1 м. Прежде чем отправиться на пляж, съешьте
+                        вредного излучения, оно проникает и на глубину 1 м. <br> Прежде чем отправиться на пляж, съешьте
                         что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите
                         потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет
                         ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч
@@ -226,7 +322,36 @@
 
         </section>
 
+        <footer class="footer">
+            <div class="conteiner">
+                <div class="footer__body">
+                    <div class="logo-wrapp">
+                        <a href="">
+                            <div class="logo">
+                                <img src="assets/img/logo.png" alt="" class="logo__img">
+                                <div class="logo__text-wrapp">
+                                    <p class="logo__tittle">printe</p>
+                                    <p class="logo__subtittle">Ваша типография</p>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="copyright">2018 — Все права защищены</p>
+                    </div>
+                    <div class="footer__work-wrapp">
+                        <p class="footer__work-about">Качественная оперативная цифровая, широкоформатная и сувенирная
+                            полиграфия!</p>
+                        <p class="footer__work-day">Работаем с 9 до 18, вс и сб выходные</p>
+                    </div>
+                    <div class="footer-meny-wrapp">
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

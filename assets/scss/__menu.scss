@@ -1,0 +1,140 @@
+.menu-desktop {
+    display: block;
+
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1200px) {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-top: 1px solid rgba(255, 0, 0, 0);
+        transition: .5s;
+
+        &::after {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "|";
+            color: #E8EDF2;
+        }
+
+        &:last-child::after {
+            content: none;
+        }
+
+        &:hover {
+            border-top: 1px solid $primary-color;
+            transition: .5s;
+        }
+
+        &:last-child:hover {
+            border-top: 1px solid rgba(255, 0, 0, 0);
+        }
+    }
+
+    &__item:hover &__link {
+        color: $primary-color;
+        transition: .5s;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 18px 34px;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color;
+        transition: .5s;
+    }
+
+    &__search {
+        padding: 18px 15px;
+    }
+
+    &__search-svg {
+        stroke: $text-color;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+    }
+}
+
+//  -----------------------------mobile-menu-----------------------------
+.menu-mobile {
+    display: none;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+    position: relative;
+
+    @media screen and (max-width: 680px) {
+        display: block;
+    }
+
+    &__menu {
+        width: 100%;
+        padding: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color;
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        z-index: 50;
+        width: 100%;
+        background-color: #fff;
+        height: 0;
+        transition: .5s;
+        overflow: hidden;
+    }
+
+    &__list-active {
+        height: auto;
+        transition: .5s;
+    }
+
+    &__item {
+        padding: 18px;
+        position: relative;
+
+        ::after {
+            position: absolute;
+            bottom: 0;
+            right: 47%;
+            transform: translate(-50%);
+            margin: 0 auto;
+            content: "";
+            width: 20px;
+            height: 1px;
+            background-color: #E8EDF2;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color;
+        transition: .5s;
+    }  
+}
